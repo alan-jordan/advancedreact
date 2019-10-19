@@ -35,7 +35,6 @@ const StyledHeader = styled.header`
   }
   .sub-bar {
     display: grid;
-    color: red;
     grid-template-columns: 1fr auto;
     border-bottom: 1px solid ${props => props.theme.lightgrey};
   }
@@ -50,11 +49,11 @@ const Header = () => (
         </Link>
       </Logo>
     </div>
-    <Nav />
+      <Nav />
     <div className="sub-bar">
       <p>Search</p>
-      <div>Cart</div>
     </div>
+    <div>Cart</div>
   </StyledHeader>
 );
 
